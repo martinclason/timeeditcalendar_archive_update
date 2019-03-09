@@ -2,7 +2,7 @@
 These scripts are made to make an archive calendar for me to subscribe to. The reason that this is needed is that the university calendar subscription service TimeEdit only allows you to see events younger than two weeks in your calendar. I don't think this feels very intuitive so I tried to fix this...
 
 The strategy I eventually took is this:
- * Download a CSV file of the whole school year. (CSV since .ics-export option only covers latest two weeks)
+ * Download a CSV file of the whole school year. (CSV since .ICS-export option only covers latest two weeks)
  * Truncate all events younger than two weeks. (So this archive celendar doesn't interfere with my regular subscribed schedule)
  * Parse CSV into ICS file.
  * Upload ICS to my personal webserver via FTP.
@@ -17,14 +17,16 @@ The strategy I eventually took is this:
 ## Quick reference for launchctl
 I used launchctl on the mac to schedule this script every sunday night. Here are some notes:
 
-The code is written in local.martinclason.timeedit-kalender-uppdatering.plist located in:
-/Users/martinclason/Library/LaunchAgents
+The code is written in `local.martinclason.timeedit-kalender-uppdatering.plist` located in:
+`/Users/martinclason/Library/LaunchAgents`
 
 
 The following commands are quite handy:
+```bash
 launchctl load local.martinclason.timeedit-kalender-uppdatering.plist
 launchctl unload local.martinclason.timeedit-kalender-uppdatering.plist
 launchctl start local.martinclason.timeedit-kalender-uppdatering
+```
 
-You can also look for output in the \*.stdout and \*.stderr files.
+You can also look for output in the `*.stdout` and `*.stderr` files.
 
