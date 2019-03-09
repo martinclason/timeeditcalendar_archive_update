@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>local.martinclason.timeedit-kalender-uppdatering</string>
+    <key>ProgramArguments</key>
+    <array>
+        <!-- <string>/bin/bash</string> -->
+        <string>/Users/martinclason/.timeeditcalendar_archive_update/Y3a/update_calendar.sh</string>        
+    </array>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/martinclason/.timeeditcalendar_archive_update/Y3a/launchctl.stdout</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/martinclason/.timeeditcalendar_archive_update/Y3a/launchctl.stderr</string>
+    <!-- <key>StartInterval</key> -->
+    <!-- <integer>10</integer> -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>WeekDay</key>
+        <integer>7</integer> 
+        <key>Hour</key>
+        <integer>3</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+</dict>
+</plist>
