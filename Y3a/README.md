@@ -11,7 +11,7 @@ The strategy I eventually took is this:
 
 ## Issues
 
-* Every event in an ICS-file needs an UID identification string. Since the downloaded CSV doesn't contain an ID for the events I had to construct one. I just hashed all the data for one event to bodge together a UID-string. This isn't a great solution since I suspect I might get duplicate activities in my calendar if TimeEdit decides to update an old event. A solution to this (as I later recognized) could be to parse the HTML from TimeEdit since it actually contains the same ID number you usually find in the events when you subscribe to TimeEdit. This however seems to be a bit mre work than to parse a simple CSV-file.
+* Every event in an ICS-file needs an UID identification string. Since the downloaded CSV doesn't contain an ID for the events I had to construct one. I just hashed all the data for one event to bodge together a UID-string. This isn't a great solution since I suspect I might get duplicate activities in my calendar if TimeEdit decides to update an old event. A solution to this (as I later recognized) could be to parse the HTML from TimeEdit since it actually contains the same ID number you usually find in the events when you subscribe to TimeEdit. This however seems to be a bit more work than to parse a simple CSV-file.
 
 
 ## Quick reference for launchctl
