@@ -2,11 +2,11 @@
 These scripts are made to make an archive calendar for me to subscribe to. The reason that this is needed is that the university calendar subscription service TimeEdit only allows you to see events younger than two weeks in your calendar. I don't think this feels very intuitive so I tried to fix this...
 
 The strategy I eventually took is this:
-* Download a CSV file of the whole school year. (CSV since .ics-export option only covers latest two weeks)
-* Truncate all events younger than two weeks. (So this archive celendar doesn't interfere with my regular subscribed schedule)
-* Parse CSV into ICS file.
-* Upload ICS to my personal webserver via FTP.
-* Subscribe to calendar url from my calendar program.
+ * Download a CSV file of the whole school year. (CSV since .ics-export option only covers latest two weeks)
+ * Truncate all events younger than two weeks. (So this archive celendar doesn't interfere with my regular subscribed schedule)
+ * Parse CSV into ICS file.
+ * Upload ICS to my personal webserver via FTP.
+ * Subscribe to calendar url from my calendar program.
 
 
 ## Issues
